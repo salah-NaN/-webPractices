@@ -1,0 +1,45 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.main h2 {
+    margin-top: 40px;
+    color: var(--color-primary);
+}
+ 
+.main img {
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.main .read-more {
+    color: white;
+    text-decoration: none;
+    background-color: var(--color-primary);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main .read-more:hover {
+    background-color: var(--color-primary-dark);
+}
+
+
+#more-post {
+    display: block;
+    color: var(--color-primary);
+    margin-top: 40px;
+    text-align: center;
+}
+
+#more-post:hover {
+    color: var(--color-primary-dark);
+}
