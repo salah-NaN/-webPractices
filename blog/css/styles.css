@@ -2,3 +2,13 @@
 @import "common.css";
 @import "header.css";
 @import "navbar.css";
+@import "aside.css";
+@import "content.css";
+@import "footer.css";
+@import "flipcard.css";
+
+@media screen and (max-width: 700px){
+    .navbar, .row{
+        flex-direction: column;
+    }
+}
