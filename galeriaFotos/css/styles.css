@@ -4,4 +4,5 @@
 @import "header.css";
 @import "sidebar.css";
 @import "footer.css";
-@import "photos.css";
+/* @import "photos_flexbox.css"; */
+@import "photos_columns.css";
