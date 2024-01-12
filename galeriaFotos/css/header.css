@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 30px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+ header ul {
+    margin: 20px;
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+header ul li a {
+    margin: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: block;
+    color: black;    ;
+
+}
+
+header ul li a:hover, header ul li a.active {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+
+@media only screen and (min-width: 1200px) {
+    header h1 {
+        text-align: left;
+    }
+
+    header ul {
+        justify-content: end;
+    }
+}
