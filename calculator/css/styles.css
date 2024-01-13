@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "DS-Digital-Bold";
+    src: url(../fonts/DS-DIGIB.TTF);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,10 +25,10 @@ body {
 
 #calculator::after {
     content: ' ';
-    background-color: rgb(53, 53, 53);
+    position: absolute;
     width: 25px;
     height: 8px;
-    position: absolute;
+    background-color: rgb(53, 53, 53);
     border-radius: 10px;
     transform: rotate(45deg);
     margin-left: -29px;
@@ -33,14 +38,14 @@ body {
 
 #calculator::before {
     content: ' ';
-    background-color: rgb(53, 53, 53);
+    position: absolute;
     width: 25px;
     height: 8px;
-    position: absolute;
-    border-radius: 10px;
+    background-color: rgb(53, 53, 53);
     transform: rotate(45deg);
     margin-left: 460px;
     margin-top: -20px;
+    border-radius: 10px;
     z-index: -1 ;
 }
 
@@ -51,16 +56,45 @@ body {
     background-color: #bcd1c0;
     margin-bottom: 20px;
     border-radius: 10px;
+    font-size: 70px;
+    font-family: "DS-Digital-Bold";
 }
-/* .btn-grid {
+
+#calculator > .operands > [data-operand-1] {
+    font-size: 40px;
+}
+
+#calculator > .btn-grid {
     display: grid;
-    grid-template-areas: 'auto auto auto auto';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
 
-.data-delete {
-    grid-column: 2 / span 2;
+#calculator > .btn-grid > button {
+    padding: 10px;
+    font-size: 25px;
+    background-color: #ececec;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: #c9c9c9;
+    margin-bottom: 10px;
+    border-width: 5px;
 }
 
-.data-equals {
-    grid-column: 3 / span 2;
-} */
+
+#calculator > .btn-grid > button:nth-child(2) {
+    grid-column: span 2;
+}
+ 
+#calculator > .btn-grid > button:last-child {
+    grid-column: span 2;   
+    background-color: #f5a34d;
+    border-color: #ce812a;
+}
+
+#copy {
+    padding: 10px;
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+}
